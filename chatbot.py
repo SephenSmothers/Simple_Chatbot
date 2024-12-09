@@ -24,6 +24,12 @@ def get_response(user_input, user_name):
         return f"I'm sorry to hear that, {user_name}!  Your motivational quote is: Is life not a thousand times too short for us to bore ourselves? – Friedrich Nietzsche  How else are you feeling?"
     elif "lonely" in user_input:
         return f"I'm sorry to hear that, {user_name}!  Your motivational quote is: Feeling sorry for yourself, and your present condition, is not only a waste of energy but the worst habit you could possibly have. – Dale Carnegie  How else are you feeling?"
+    elif "fear" in user_input:
+        return f"I'm sorry to hear that, {user_name}!  Your motivational quote is: Do the thing you fear, and the death of fear is certain. – Ralph Waldo Emerson  How else are you feeling?"
+    elif "guilt" in user_input:
+        return f"I'm sorry to hear that, {user_name}!  Your motivational quote is: Guilt is not a response to anger; it is a response to one’s own actions or lack of action. If it leads to change, then it can be useful, since it’s then no longer guilt but the beginning of knowledge. – Audre Lorde  How else are you feeling?"
+    elif "jealousy" in user_input:
+        return f"I'm sorry to hear that, {user_name}!  Your motivational quote is: The envious die not once, but as oft as the envied win applause. – Baltasar Gracián  How else are you feeling?"
     elif "bye" in user_input or "goodbye" in user_input:
         return f"Goodbye, {user_name}! Have a great day!"
     else:
@@ -48,7 +54,7 @@ def main():
     greeting = get_greeting()
     
     print(f"{greeting}, {user_name}!  I'm here to motivate you.  How are you feeling today?")
-    print("Type 'bye' to exit.")
+    print("Choose frome one of the following emotions:\nsad\nangry\nself-conscious\nanxious\nunhappy\nannoyed\nfrustrated\nbored\nlonely\nfear\nguilt\njealousy")
     
     while True:
         user_input = input("You: ")
